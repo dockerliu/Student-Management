@@ -79,7 +79,7 @@ namespace StudentManager
             DialogResult result= frmEditStudent.ShowDialog();
             if (result==DialogResult.Cancel)
             {
-                btnClose_Click(null, null);
+                btnQuery_Click(null, null);
             }
         }
         //删除学员对象
@@ -87,11 +87,22 @@ namespace StudentManager
         {
             if (dgvStudentList.RowCount == 0 || dgvStudentList.CurrentRow == null)
             {
-                MessageBox.Show("没有要删除的学员信息!", "打印提示:");
+                MessageBox.Show("没有要删除的学员信息!", "删除提示:");
                 
                 return;
             }
-            //打印学员信息
+            //删除学员信息确定
+            if ((MessageBox.Show("确定要删除 ["+dgvStudentList.CurrentRow.Cells["StudentName"].Value.ToString()+"] 吗？","删除提示",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes))
+            {
+                string studentID = dgvStudentList.CurrentRow.Cells["studentID"].Value.ToString();
+                //根据学号删除信息
+                if (objStudnetService.DeleteByStudentID(studentID))
+                {
+                    MessageBox.Show("删除的学员成功!", "删除提示:");
+
+                    btnQuery_Click(null, null);
+                }
+            }
         }
         //姓名降序
         private void btnNameDESC_Click(object sender, EventArgs e)

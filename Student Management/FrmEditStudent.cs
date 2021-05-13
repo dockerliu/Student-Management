@@ -163,7 +163,7 @@ namespace StudentManager
                 {
                     MessageBox.Show("学员修改成功!", "修改提示:");
                     
-                        //this.Close();
+                        Close();
                 }
                 else
                 {

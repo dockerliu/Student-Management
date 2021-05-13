@@ -175,5 +175,34 @@ namespace DAL
             }
         }
 
+        /// <summary>
+        /// 根据学生学号删除信息
+        /// </summary>
+        /// <param name="StudentID"></param>
+        /// <returns></returns>
+        public bool DeleteByStudentID(string StudentID)
+        {
+            string sql = "DELETE FROM Students WHERE StudentId=" + StudentID;
+            try
+            {
+
+                return SQLHelper.Update(sql) > 0;
+            }
+            catch (MySqlException ex)
+            {
+                if (ex.Number==547)
+                {
+                    throw new Exception("当前学号被其他数据引用，不能直接被删除！"+ex.Message);
+                }
+                else
+                {
+                    throw new Exception("删除学员发生错误！" + ex.Message);
+                }
+                
+            }
+            catch(Exception ex) { throw new Exception("删除学员失败！"+ex.Message); }
+            
+        }
+           
     }
 }
