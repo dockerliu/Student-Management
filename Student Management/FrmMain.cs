@@ -17,8 +17,10 @@ namespace StudentManager
         {
             InitializeComponent();
             //MessageBox.Show(SQLHelper.connString);
-           
-        }    
+            //初始化背景
+            lblCurrentUser.Text = Program.currentAmin.AdminName + "]";
+            panelForm.BackgroundImage = Image.FromFile("mainbg.png");
+        }
 
         #region 嵌入窗体显示
         /// <summary>

@@ -87,7 +87,7 @@
             this.帮助HToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(992, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(992, 24);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -98,27 +98,27 @@
             this.toolStripSeparator3,
             this.tmiClose});
             this.系统ToolStripMenuItem.Name = "系统ToolStripMenuItem";
-            this.系统ToolStripMenuItem.Size = new System.Drawing.Size(59, 21);
+            this.系统ToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.系统ToolStripMenuItem.Text = "系统(&S)";
             // 
             // tmiModifyPwd
             // 
             this.tmiModifyPwd.Image = ((System.Drawing.Image)(resources.GetObject("tmiModifyPwd.Image")));
             this.tmiModifyPwd.Name = "tmiModifyPwd";
-            this.tmiModifyPwd.Size = new System.Drawing.Size(140, 22);
+            this.tmiModifyPwd.Size = new System.Drawing.Size(142, 22);
             this.tmiModifyPwd.Text = "密码修改(&C)";
             this.tmiModifyPwd.Click += new System.EventHandler(this.tmiModifyPwd_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(137, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(139, 6);
             // 
             // tmiClose
             // 
             this.tmiClose.Image = ((System.Drawing.Image)(resources.GetObject("tmiClose.Image")));
             this.tmiClose.Name = "tmiClose";
-            this.tmiClose.Size = new System.Drawing.Size(140, 22);
+            this.tmiClose.Size = new System.Drawing.Size(142, 22);
             this.tmiClose.Text = "退出(&E)";
             this.tmiClose.Click += new System.EventHandler(this.tmiClose_Click);
             // 
@@ -129,27 +129,27 @@
             this.toolStripSeparator2,
             this.tsmiManageStudent});
             this.学员管理ToolStripMenuItem.Name = "学员管理ToolStripMenuItem";
-            this.学员管理ToolStripMenuItem.Size = new System.Drawing.Size(88, 21);
+            this.学员管理ToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
             this.学员管理ToolStripMenuItem.Text = "学员管理(&M)";
             // 
             // tsmiAddStudent
             // 
             this.tsmiAddStudent.Image = ((System.Drawing.Image)(resources.GetObject("tsmiAddStudent.Image")));
             this.tsmiAddStudent.Name = "tsmiAddStudent";
-            this.tsmiAddStudent.Size = new System.Drawing.Size(166, 22);
+            this.tsmiAddStudent.Size = new System.Drawing.Size(169, 22);
             this.tsmiAddStudent.Text = "添加学员(&A)";
             this.tsmiAddStudent.Click += new System.EventHandler(this.tsmiAddStudent_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(163, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(166, 6);
             // 
             // tsmiManageStudent
             // 
             this.tsmiManageStudent.Image = ((System.Drawing.Image)(resources.GetObject("tsmiManageStudent.Image")));
             this.tsmiManageStudent.Name = "tsmiManageStudent";
-            this.tsmiManageStudent.Size = new System.Drawing.Size(166, 22);
+            this.tsmiManageStudent.Size = new System.Drawing.Size(169, 22);
             this.tsmiManageStudent.Text = "学员信息管理(&Q)";
             this.tsmiManageStudent.Click += new System.EventHandler(this.tsmiManageStudent_Click);
             // 
@@ -160,27 +160,27 @@
             this.toolStripSeparator1,
             this.tsmiQuery});
             this.成绩管理ToolStripMenuItem.Name = "成绩管理ToolStripMenuItem";
-            this.成绩管理ToolStripMenuItem.Size = new System.Drawing.Size(81, 21);
+            this.成绩管理ToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
             this.成绩管理ToolStripMenuItem.Text = "成绩管理(&J)";
             // 
             // tsmiQueryAndAnalysis
             // 
             this.tsmiQueryAndAnalysis.Image = ((System.Drawing.Image)(resources.GetObject("tsmiQueryAndAnalysis.Image")));
             this.tsmiQueryAndAnalysis.Name = "tsmiQueryAndAnalysis";
-            this.tsmiQueryAndAnalysis.Size = new System.Drawing.Size(178, 22);
+            this.tsmiQueryAndAnalysis.Size = new System.Drawing.Size(182, 22);
             this.tsmiQueryAndAnalysis.Text = "成绩查询与分析(&Q)";
             this.tsmiQueryAndAnalysis.Click += new System.EventHandler(this.tsmiQueryAndAnalysis_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(175, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(179, 6);
             // 
             // tsmiQuery
             // 
             this.tsmiQuery.Image = ((System.Drawing.Image)(resources.GetObject("tsmiQuery.Image")));
             this.tsmiQuery.Name = "tsmiQuery";
-            this.tsmiQuery.Size = new System.Drawing.Size(178, 22);
+            this.tsmiQuery.Size = new System.Drawing.Size(182, 22);
             this.tsmiQuery.Text = "成绩快速查询(&S)";
             this.tsmiQuery.Click += new System.EventHandler(this.tsmiQuery_Click);
             // 
@@ -191,27 +191,27 @@
             this.toolStripSeparator7,
             this.tsmi_AQuery});
             this.tsmi_AttendanceQuery.Name = "tsmi_AttendanceQuery";
-            this.tsmi_AttendanceQuery.Size = new System.Drawing.Size(84, 21);
+            this.tsmi_AttendanceQuery.Size = new System.Drawing.Size(87, 20);
             this.tsmi_AttendanceQuery.Text = "考勤管理(&A)";
             // 
             // tsmi_Card
             // 
             this.tsmi_Card.Image = ((System.Drawing.Image)(resources.GetObject("tsmi_Card.Image")));
             this.tsmi_Card.Name = "tsmi_Card";
-            this.tsmi_Card.Size = new System.Drawing.Size(140, 22);
+            this.tsmi_Card.Size = new System.Drawing.Size(141, 22);
             this.tsmi_Card.Text = "考勤打卡(&R)";
             this.tsmi_Card.Click += new System.EventHandler(this.tsmi_Card_Click);
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(137, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(138, 6);
             // 
             // tsmi_AQuery
             // 
             this.tsmi_AQuery.Image = ((System.Drawing.Image)(resources.GetObject("tsmi_AQuery.Image")));
             this.tsmi_AQuery.Name = "tsmi_AQuery";
-            this.tsmi_AQuery.Size = new System.Drawing.Size(140, 22);
+            this.tsmi_AQuery.Size = new System.Drawing.Size(141, 22);
             this.tsmi_AQuery.Text = "考勤查询";
             this.tsmi_AQuery.Click += new System.EventHandler(this.tsmi_AQuery_Click);
             // 
@@ -223,14 +223,14 @@
             this.toolStripSeparator8,
             this.tsmi_about});
             this.帮助HToolStripMenuItem.Name = "帮助HToolStripMenuItem";
-            this.帮助HToolStripMenuItem.Size = new System.Drawing.Size(61, 21);
+            this.帮助HToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.帮助HToolStripMenuItem.Text = "帮助(&H)";
             // 
             // tsmi_linkxkt
             // 
             this.tsmi_linkxkt.Image = ((System.Drawing.Image)(resources.GetObject("tsmi_linkxkt.Image")));
             this.tsmi_linkxkt.Name = "tsmi_linkxkt";
-            this.tsmi_linkxkt.Size = new System.Drawing.Size(141, 22);
+            this.tsmi_linkxkt.Size = new System.Drawing.Size(142, 22);
             this.tsmi_linkxkt.Text = "访问官网(&X)";
             this.tsmi_linkxkt.Click += new System.EventHandler(this.tsmi_linkxkt_Click);
             // 
@@ -238,19 +238,19 @@
             // 
             this.txmi_update.Image = ((System.Drawing.Image)(resources.GetObject("txmi_update.Image")));
             this.txmi_update.Name = "txmi_update";
-            this.txmi_update.Size = new System.Drawing.Size(141, 22);
+            this.txmi_update.Size = new System.Drawing.Size(142, 22);
             this.txmi_update.Text = "系统升级(&U)";
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(138, 6);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(139, 6);
             // 
             // tsmi_about
             // 
             this.tsmi_about.Image = ((System.Drawing.Image)(resources.GetObject("tsmi_about.Image")));
             this.tsmi_about.Name = "tsmi_about";
-            this.tsmi_about.Size = new System.Drawing.Size(141, 22);
+            this.tsmi_about.Size = new System.Drawing.Size(142, 22);
             this.tsmi_about.Text = "关于我们(&A)";
             this.tsmi_about.Click += new System.EventHandler(this.tsmi_about_Click);
             // 
@@ -269,20 +269,20 @@
             // lblVersion
             // 
             this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(85, 17);
+            this.lblVersion.Size = new System.Drawing.Size(84, 17);
             this.lblVersion.Text = " 版本号：V2.0";
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(100, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(105, 17);
             this.toolStripStatusLabel1.Text = " [当前用登录户：";
             // 
             // lblCurrentUser
             // 
             this.lblCurrentUser.Name = "lblCurrentUser";
-            this.lblCurrentUser.Size = new System.Drawing.Size(48, 17);
-            this.lblCurrentUser.Text = "王晓军]";
+            this.lblCurrentUser.Size = new System.Drawing.Size(32, 17);
+            this.lblCurrentUser.Text = "XXX]";
             // 
             // toolStrip1
             // 
@@ -297,7 +297,7 @@
             this.tsbModifyPwd,
             this.toolStripSeparator6,
             this.tsbExit});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 25);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(992, 25);
             this.toolStrip1.TabIndex = 7;
@@ -308,7 +308,7 @@
             this.tsbAddStudent.Image = ((System.Drawing.Image)(resources.GetObject("tsbAddStudent.Image")));
             this.tsbAddStudent.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbAddStudent.Name = "tsbAddStudent";
-            this.tsbAddStudent.Size = new System.Drawing.Size(76, 22);
+            this.tsbAddStudent.Size = new System.Drawing.Size(79, 22);
             this.tsbAddStudent.Text = "添加学员";
             this.tsbAddStudent.Click += new System.EventHandler(this.tsbAddStudent_Click);
             // 
@@ -317,7 +317,7 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(76, 22);
+            this.toolStripButton1.Size = new System.Drawing.Size(79, 22);
             this.toolStripButton1.Text = "学员管理";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
@@ -331,7 +331,7 @@
             this.tsbScoreAnalysis.Image = ((System.Drawing.Image)(resources.GetObject("tsbScoreAnalysis.Image")));
             this.tsbScoreAnalysis.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbScoreAnalysis.Name = "tsbScoreAnalysis";
-            this.tsbScoreAnalysis.Size = new System.Drawing.Size(112, 22);
+            this.tsbScoreAnalysis.Size = new System.Drawing.Size(118, 22);
             this.tsbScoreAnalysis.Text = "成绩查询与分析";
             this.tsbScoreAnalysis.Click += new System.EventHandler(this.tsbScoreAnalysis_Click);
             // 
@@ -340,7 +340,7 @@
             this.tsbQuery.Image = ((System.Drawing.Image)(resources.GetObject("tsbQuery.Image")));
             this.tsbQuery.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbQuery.Name = "tsbQuery";
-            this.tsbQuery.Size = new System.Drawing.Size(100, 22);
+            this.tsbQuery.Size = new System.Drawing.Size(105, 22);
             this.tsbQuery.Text = "成绩快速查询";
             this.tsbQuery.Click += new System.EventHandler(this.tsbQuery_Click);
             // 
@@ -354,7 +354,7 @@
             this.tsbModifyPwd.Image = ((System.Drawing.Image)(resources.GetObject("tsbModifyPwd.Image")));
             this.tsbModifyPwd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbModifyPwd.Name = "tsbModifyPwd";
-            this.tsbModifyPwd.Size = new System.Drawing.Size(76, 22);
+            this.tsbModifyPwd.Size = new System.Drawing.Size(79, 22);
             this.tsbModifyPwd.Text = "修改密码";
             this.tsbModifyPwd.Click += new System.EventHandler(this.tsbModifyPwd_Click);
             // 
@@ -368,7 +368,7 @@
             this.tsbExit.Image = ((System.Drawing.Image)(resources.GetObject("tsbExit.Image")));
             this.tsbExit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbExit.Name = "tsbExit";
-            this.tsbExit.Size = new System.Drawing.Size(76, 22);
+            this.tsbExit.Size = new System.Drawing.Size(79, 22);
             this.tsbExit.Text = "退出系统";
             this.tsbExit.Click += new System.EventHandler(this.tsbExit_Click);
             // 

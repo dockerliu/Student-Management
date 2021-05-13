@@ -18,6 +18,8 @@ namespace StudentManager
         public FrmUserLogin()
         {
             InitializeComponent();
+           
+           
         }
 
         AdminService adminService = new AdminService();
