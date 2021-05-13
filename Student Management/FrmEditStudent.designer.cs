@@ -45,7 +45,7 @@
             this.cboClassName = new System.Windows.Forms.ComboBox();
             this.rdoFemale = new System.Windows.Forms.RadioButton();
             this.txtPhoneNumber = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbStudent = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtCardNo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -55,7 +55,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbStu)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.gbStudent.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnModify
@@ -96,6 +96,7 @@
             this.btnChoseImage.TabIndex = 20;
             this.btnChoseImage.Text = "选择照片";
             this.btnChoseImage.UseVisualStyleBackColor = true;
+            this.btnChoseImage.Click += new System.EventHandler(this.btnChoseImage_Click);
             // 
             // txtStudentName
             // 
@@ -117,11 +118,11 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("方正准圆简体", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.ForeColor = System.Drawing.Color.Purple;
             this.label9.Location = new System.Drawing.Point(15, 32);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(201, 32);
+            this.label9.Size = new System.Drawing.Size(195, 33);
             this.label9.TabIndex = 18;
             this.label9.Text = "修改学员信息";
             // 
@@ -206,33 +207,33 @@
             this.txtPhoneNumber.Size = new System.Drawing.Size(233, 21);
             this.txtPhoneNumber.TabIndex = 7;
             // 
-            // groupBox1
+            // gbStudent
             // 
-            this.groupBox1.Controls.Add(this.txtStudentName);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.rdoMale);
-            this.groupBox1.Controls.Add(this.txtStudentId);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.txtAddress);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.cboClassName);
-            this.groupBox1.Controls.Add(this.rdoFemale);
-            this.groupBox1.Controls.Add(this.txtPhoneNumber);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txtCardNo);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.dtpBirthday);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.txtStudentIdNo);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Location = new System.Drawing.Point(228, 77);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(587, 244);
-            this.groupBox1.TabIndex = 21;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "[学员基本信息]";
+            this.gbStudent.Controls.Add(this.txtStudentName);
+            this.gbStudent.Controls.Add(this.label1);
+            this.gbStudent.Controls.Add(this.label2);
+            this.gbStudent.Controls.Add(this.label3);
+            this.gbStudent.Controls.Add(this.rdoMale);
+            this.gbStudent.Controls.Add(this.txtStudentId);
+            this.gbStudent.Controls.Add(this.label8);
+            this.gbStudent.Controls.Add(this.txtAddress);
+            this.gbStudent.Controls.Add(this.label6);
+            this.gbStudent.Controls.Add(this.cboClassName);
+            this.gbStudent.Controls.Add(this.rdoFemale);
+            this.gbStudent.Controls.Add(this.txtPhoneNumber);
+            this.gbStudent.Controls.Add(this.label5);
+            this.gbStudent.Controls.Add(this.txtCardNo);
+            this.gbStudent.Controls.Add(this.label4);
+            this.gbStudent.Controls.Add(this.dtpBirthday);
+            this.gbStudent.Controls.Add(this.label7);
+            this.gbStudent.Controls.Add(this.txtStudentIdNo);
+            this.gbStudent.Controls.Add(this.label10);
+            this.gbStudent.Location = new System.Drawing.Point(228, 77);
+            this.gbStudent.Name = "gbStudent";
+            this.gbStudent.Size = new System.Drawing.Size(587, 244);
+            this.gbStudent.TabIndex = 21;
+            this.gbStudent.TabStop = false;
+            this.gbStudent.Text = "[学员基本信息]";
             // 
             // label5
             // 
@@ -303,6 +304,7 @@
             this.btnClose.Text = "关闭窗口";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // FrmEditStudent
             // 
@@ -313,7 +315,7 @@
             this.Controls.Add(this.btnChoseImage);
             this.Controls.Add(this.pbStu);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbStudent);
             this.Controls.Add(this.btnModify);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -322,8 +324,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "修改学员信息";
             ((System.ComponentModel.ISupportInitialize)(this.pbStu)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbStudent.ResumeLayout(false);
+            this.gbStudent.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,7 +349,7 @@
         private System.Windows.Forms.ComboBox cboClassName;
         private System.Windows.Forms.RadioButton rdoFemale;
         private System.Windows.Forms.TextBox txtPhoneNumber;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbStudent;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtCardNo;
         private System.Windows.Forms.Label label4;

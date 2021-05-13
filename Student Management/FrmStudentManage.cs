@@ -65,12 +65,33 @@ namespace StudentManager
         //修改学员对象
         private void btnEidt_Click(object sender, EventArgs e)
         {
-
+            if (dgvStudentList.RowCount == 0 || dgvStudentList.CurrentRow == null)
+            {
+                MessageBox.Show("没有要修改的学员信息!", "打印提示:");
+                return;
+            }
+            //修改学员信息
+            string stuid = dgvStudentList.CurrentRow.Cells["StudentId"].Value.ToString();
+            StudentExt objStudentExt = objStudnetService.GetStudentByStuID(stuid);
+            objStudentExt.StudentId = Convert.ToInt32(stuid);
+            //显示修改窗体
+            FrmEditStudent frmEditStudent = new FrmEditStudent(objStudentExt);
+            DialogResult result= frmEditStudent.ShowDialog();
+            if (result==DialogResult.Cancel)
+            {
+                btnClose_Click(null, null);
+            }
         }
         //删除学员对象
         private void btnDel_Click(object sender, EventArgs e)
         {
-
+            if (dgvStudentList.RowCount == 0 || dgvStudentList.CurrentRow == null)
+            {
+                MessageBox.Show("没有要删除的学员信息!", "打印提示:");
+                
+                return;
+            }
+            //打印学员信息
         }
         //姓名降序
         private void btnNameDESC_Click(object sender, EventArgs e)
@@ -108,8 +129,11 @@ namespace StudentManager
                 return;
             }
             //打印学员信息
-            string stuid = dgvStudentList.CurrentRow.Cells["学号"].Value.ToString();
-            MessageBox.Show(stuid);
+            string stuid = dgvStudentList.CurrentRow.Cells["StudentId"].Value.ToString();
+            StudentExt objStudentExt = objStudnetService.GetStudentByStuID(stuid);
+            objStudentExt.StudentId = Convert.ToInt32( stuid);
+            //调用Excel模板实现打印
+            new PrintStudent().ExecutePrint(objStudentExt);
         }
      
         //关闭

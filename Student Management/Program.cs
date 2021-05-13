@@ -13,6 +13,7 @@ namespace StudentManager
         /// 应用程序的主入口点。
         /// </summary>
         [STAThread]
+        [Obsolete]
         static void Main()
         {
             Application.EnableVisualStyles();

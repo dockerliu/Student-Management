@@ -17,7 +17,7 @@ namespace DAL
     public class StudentService
     {
         /// <summary>
-        /// 验证学生身份证是否有重复
+        /// 新增学员验证学生身份证是否有重复
         /// </summary>
         /// <param name="IDCard"></param>
         /// <returns></returns>
@@ -28,7 +28,29 @@ namespace DAL
             return Convert.ToInt32(SQLHelper.GetSingleResult(sql)) > 0;
         }
         /// <summary>
-        /// 验证学生卡号是否有重复
+        /// 修改学员验证学生身份证是否有重复
+        /// </summary>
+        /// <param name="IDCard"></param>
+        /// <returns></returns>
+        public bool IsIDCardExisted(string IDCard,string studentId)
+        {
+            string sql = "select count(1) from Students where StudentIdNo={0} and StudentId<> {1}";
+            sql = string.Format(sql, IDCard,studentId);
+            return Convert.ToInt32(SQLHelper.GetSingleResult(sql)) > 0;
+        }
+        /// <summary>
+        /// 新增学员验证学生卡号是否有重复
+        /// </summary>
+        /// <param name="IDCard"></param>
+        /// <returns></returns>
+        public bool IsCardExisted(string CardNo, string studentId)
+        {
+            string sql = "select count(1) from Students where CardNo={0}  and StudentId<> {1}";
+            sql = string.Format(sql, CardNo,studentId);
+            return Convert.ToInt32(SQLHelper.GetSingleResult(sql)) > 0;
+        }
+        /// <summary>
+        /// 修改学员验证学生卡号是否有重复
         /// </summary>
         /// <param name="IDCard"></param>
         /// <returns></returns>
@@ -105,6 +127,7 @@ namespace DAL
             {
                 studentExt=  new StudentExt
                {
+                    
                     StudentName = objReader["StudentName"].ToString(),
                     Age = Convert.ToInt32( objReader["Age"]),
                     Gender = objReader["Gender"].ToString(),
@@ -120,5 +143,37 @@ namespace DAL
 
             return studentExt;
         }
+
+        /// <summary>
+        /// 通过学号修改学生信息
+        /// </summary>
+        /// <param name="objStudent"></param>
+        /// <returns></returns>
+        public bool ModifyStudent(Student objStudent)
+        {
+            StringBuilder sqlBuilder = new StringBuilder();
+            sqlBuilder.Append("UPDATE Students SET StudentName='{0}',Gender='{1}',Birthday='{2}',");
+            sqlBuilder.Append("StudentIdNo='{3}',Age={4},PhoneNumber='{5}',StudentAddress='{6}',CardNo='{7}',ClassId='{8}',StuImage='{9}'");
+            sqlBuilder.Append(" WHERE StudentId={10}");
+            string sql = string.Format(sqlBuilder.ToString(), objStudent.StudentName,
+                objStudent.Gender,objStudent.Birthday,objStudent.StudentIdNo,
+                objStudent.Age,objStudent.PhoneNumber,objStudent.StudentAddress,objStudent.CardNo,
+                objStudent.ClassId,objStudent.StuImage,objStudent.StudentId
+                );
+            try
+            {
+                return SQLHelper.Update(sql) > 0;
+            }
+            catch (MySqlException ex)
+            {
+                //扑捉数据库操作异常
+                throw new Exception("保存修改的数据出现错误！"+ex.Message);
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+
     }
 }
