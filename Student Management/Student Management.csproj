@@ -45,14 +45,120 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Common\DataGridViewStyle.cs" />
+    <Compile Include="Common\DataValidate.cs" />
+    <Compile Include="Common\SerializeObjectToString.cs" />
+    <Compile Include="Common\StringSecurity.cs" />
+    <Compile Include="FrmAbout.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmAbout.designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddStudent.designer.cs">
+      <DependentUpon>FrmAddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAttendance.designer.cs">
+      <DependentUpon>FrmAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAttendanceQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAttendanceQuery.designer.cs">
+      <DependentUpon>FrmAttendanceQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditStudent.designer.cs">
+      <DependentUpon>FrmEditStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModifyPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModifyPwd.designer.cs">
+      <DependentUpon>FrmModifyPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmScoreManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmScoreManage.designer.cs">
+      <DependentUpon>FrmScoreManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmScoreQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmScoreQuery.designer.cs">
+      <DependentUpon>FrmScoreQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStudentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStudentInfo.designer.cs">
+      <DependentUpon>FrmStudentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStudentManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStudentManage.designer.cs">
+      <DependentUpon>FrmStudentManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserLogin.designer.cs">
+      <DependentUpon>FrmUserLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddStudent.resx">
+      <DependentUpon>FrmAddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAttendance.resx">
+      <DependentUpon>FrmAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAttendanceQuery.resx">
+      <DependentUpon>FrmAttendanceQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditStudent.resx">
+      <DependentUpon>FrmEditStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModifyPwd.resx">
+      <DependentUpon>FrmModifyPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmScoreManage.resx">
+      <DependentUpon>FrmScoreManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmScoreQuery.resx">
+      <DependentUpon>FrmScoreQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudentInfo.resx">
+      <DependentUpon>FrmStudentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudentManage.resx">
+      <DependentUpon>FrmStudentManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserLogin.resx">
+      <DependentUpon>FrmUserLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -74,6 +180,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{dcc60a8c-9cec-4af2-a67c-3b7fc21e1ce4}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{dd5dc862-3d4e-493a-afba-239955f8d80e}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
