@@ -85,5 +85,31 @@ namespace StudentManager
         {
             Close();
         }
+        //用户名
+        private void txtLoginId_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (txtLoginId.Text.Trim().Length==0)
+            {
+                txtLoginId.Focus();
+                return;
+            }
+            if (e.KeyValue==13)
+            {
+                txtLoginPwd.Focus();
+            }
+        }
+        //密码
+        private void txtLoginPwd_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (txtLoginPwd.Text.Trim().Length==0)
+            {
+                txtLoginPwd.Focus();
+                return;
+            }
+            if (e.KeyValue==13)
+            {
+                btnLogin_Click(null,null);
+            }
+        }
     }
 }

@@ -13,6 +13,7 @@ namespace StudentManager
 {
     public partial class FrmMain : Form
     {
+        [Obsolete]
         public FrmMain()
         {
             InitializeComponent();
@@ -20,6 +21,7 @@ namespace StudentManager
             //初始化背景
             lblCurrentUser.Text = Program.currentAmin.AdminName + "]";
             panelForm.BackgroundImage = Image.FromFile("mainbg.png");
+            lblVersion.Text = "版本号:" + ConfigurationSettings.AppSettings["sysversion"].ToString();
         }
 
         #region 嵌入窗体显示

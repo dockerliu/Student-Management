@@ -6,9 +6,16 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace StudentManager
 {
+    /// <summary>
+    /// 图片系列化
+    /// </summary>
     public class SerializeObjectToString
     {
-        //将Object类型对象(注：必须是可序列化的对象)转换为二进制序列字符串
+        /// <summary>
+        /// 将Object类型对象(注：必须是可序列化的对象)转换为二进制序列字符串
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public string SerializeObject(object obj)
         {
             IFormatter formatter = new BinaryFormatter();
@@ -24,7 +31,12 @@ namespace StudentManager
             }
             return result;
         }
-        //将二进制序列字符串转换为Object类型对象
+        
+        /// <summary>
+        /// 将二进制序列字符串转换为Object类型对象
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
         public object DeserializeObject(string str)
         {
             IFormatter formatter = new BinaryFormatter();

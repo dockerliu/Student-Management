@@ -125,7 +125,7 @@
             // 
             // lblStudentName
             // 
-            this.lblStudentName.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblStudentName.BackColor = System.Drawing.Color.White;
             this.lblStudentName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblStudentName.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblStudentName.Location = new System.Drawing.Point(77, 18);
@@ -136,7 +136,7 @@
             // 
             // lblBirthday
             // 
-            this.lblBirthday.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblBirthday.BackColor = System.Drawing.Color.White;
             this.lblBirthday.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblBirthday.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblBirthday.Location = new System.Drawing.Point(77, 58);
@@ -147,7 +147,7 @@
             // 
             // lblStudentIdNo
             // 
-            this.lblStudentIdNo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblStudentIdNo.BackColor = System.Drawing.Color.White;
             this.lblStudentIdNo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblStudentIdNo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblStudentIdNo.Location = new System.Drawing.Point(77, 104);
@@ -158,7 +158,7 @@
             // 
             // lblPhoneNumber
             // 
-            this.lblPhoneNumber.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblPhoneNumber.BackColor = System.Drawing.Color.White;
             this.lblPhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblPhoneNumber.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblPhoneNumber.Location = new System.Drawing.Point(77, 178);
@@ -169,7 +169,7 @@
             // 
             // lblAddress
             // 
-            this.lblAddress.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblAddress.BackColor = System.Drawing.Color.White;
             this.lblAddress.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAddress.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblAddress.Location = new System.Drawing.Point(77, 214);
@@ -180,7 +180,7 @@
             // 
             // lblGender
             // 
-            this.lblGender.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblGender.BackColor = System.Drawing.Color.White;
             this.lblGender.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblGender.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblGender.Location = new System.Drawing.Point(277, 18);
@@ -191,7 +191,7 @@
             // 
             // lblClass
             // 
-            this.lblClass.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblClass.BackColor = System.Drawing.Color.White;
             this.lblClass.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblClass.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblClass.Location = new System.Drawing.Point(277, 58);
@@ -211,7 +211,7 @@
             // 
             // lblCardNo
             // 
-            this.lblCardNo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblCardNo.BackColor = System.Drawing.Color.White;
             this.lblCardNo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCardNo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblCardNo.Location = new System.Drawing.Point(77, 142);

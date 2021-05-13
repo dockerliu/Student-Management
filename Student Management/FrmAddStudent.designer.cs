@@ -51,9 +51,9 @@
             this.pbStu = new System.Windows.Forms.PictureBox();
             this.btnChoseImage = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbStudent = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbStu)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.gbStudent.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -251,46 +251,46 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("方正准圆简体", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.ForeColor = System.Drawing.Color.Purple;
             this.label9.Location = new System.Drawing.Point(27, 26);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(170, 32);
+            this.label9.Size = new System.Drawing.Size(165, 33);
             this.label9.TabIndex = 0;
             this.label9.Text = "添加新学员";
             // 
-            // groupBox1
+            // gbStudent
             // 
-            this.groupBox1.Controls.Add(this.txtStudentName);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.rdoMale);
-            this.groupBox1.Controls.Add(this.txtAddress);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.cboClassName);
-            this.groupBox1.Controls.Add(this.rdoFemale);
-            this.groupBox1.Controls.Add(this.txtPhoneNumber);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txtCardNo);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.dtpBirthday);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.txtStudentIdNo);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Location = new System.Drawing.Point(243, 75);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(587, 208);
-            this.groupBox1.TabIndex = 13;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "[学员基本信息]";
+            this.gbStudent.Controls.Add(this.txtStudentName);
+            this.gbStudent.Controls.Add(this.label1);
+            this.gbStudent.Controls.Add(this.label2);
+            this.gbStudent.Controls.Add(this.label3);
+            this.gbStudent.Controls.Add(this.rdoMale);
+            this.gbStudent.Controls.Add(this.txtAddress);
+            this.gbStudent.Controls.Add(this.label6);
+            this.gbStudent.Controls.Add(this.cboClassName);
+            this.gbStudent.Controls.Add(this.rdoFemale);
+            this.gbStudent.Controls.Add(this.txtPhoneNumber);
+            this.gbStudent.Controls.Add(this.label5);
+            this.gbStudent.Controls.Add(this.txtCardNo);
+            this.gbStudent.Controls.Add(this.label8);
+            this.gbStudent.Controls.Add(this.dtpBirthday);
+            this.gbStudent.Controls.Add(this.label7);
+            this.gbStudent.Controls.Add(this.txtStudentIdNo);
+            this.gbStudent.Controls.Add(this.label4);
+            this.gbStudent.Location = new System.Drawing.Point(243, 75);
+            this.gbStudent.Name = "gbStudent";
+            this.gbStudent.Size = new System.Drawing.Size(587, 208);
+            this.gbStudent.TabIndex = 13;
+            this.gbStudent.TabStop = false;
+            this.gbStudent.Text = "[学员基本信息]";
             // 
             // FrmAddStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(842, 332);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbStudent);
             this.Controls.Add(this.btnChoseImage);
             this.Controls.Add(this.pbStu);
             this.Controls.Add(this.btnClose);
@@ -304,8 +304,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "添加新学员";
             ((System.ComponentModel.ISupportInitialize)(this.pbStu)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbStudent.ResumeLayout(false);
+            this.gbStudent.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -335,6 +335,6 @@
         private System.Windows.Forms.PictureBox pbStu;
         private System.Windows.Forms.Button btnChoseImage;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbStudent;
     }
 }
