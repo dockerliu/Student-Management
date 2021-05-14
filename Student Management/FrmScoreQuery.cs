@@ -16,7 +16,7 @@ namespace StudentManager
     {
         StudentClassService objClass = new StudentClassService();
         ScoreListService objScore = new ScoreListService();
-        DataTable  dt;
+        DataTable dt;
         public FrmScoreQuery()
         {
             InitializeComponent();
@@ -24,15 +24,14 @@ namespace StudentManager
             cboClass.DisplayMember = "ClassName";
             cboClass.ValueMember = "ClassID";
             cboClass.SelectedIndex = -1;
-
+            dt = objScore.GetScoreByClassName();
         }  
    
         //根据班级名称动态筛选
         private void cboClass_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (dgvScoreList.DataSource == null) return;
-            dt = objScore.GetScoreByClassName();
-                dgvScoreList.DataSource = null;
+            if (dt == null) return;
+            dgvScoreList.DataSource = null;
             dt.DefaultView.RowFilter =string.Format("ClassName like '{0}'",cboClass.Text);
                 dgvScoreList.DataSource = dt;
           
@@ -47,7 +46,11 @@ namespace StudentManager
         //根据C#成绩动态筛选
         private void txtScore_TextChanged(object sender, EventArgs e)
         {
-          
+            if (dt == null||txtScore.Text.Trim().Length<1) return;
+            dgvScoreList.DataSource = null;
+            dt.DefaultView.RowFilter = string.Format("CSharp > '{0}'", txtScore.Text);
+            dgvScoreList.DataSource = dt;
+
         }
         private void btnClose_Click(object sender, EventArgs e)
         {
