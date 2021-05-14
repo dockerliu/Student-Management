@@ -6,6 +6,7 @@ using System.Text;
 using System.Data;
 using MySql.Data.MySqlClient;
 using System.Configuration;//引入读取配置文件类所在的命名空间
+using System.Windows.Forms;
 
 namespace DAL
 {
@@ -99,5 +100,29 @@ namespace DAL
         {
             return Convert.ToDateTime(GetSingleResult("SELECT NOW()"));
         }
+
+        /// <summary>
+        /// 返回一个DataTable数据集
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <returns></returns>
+        public static DataTable GetByClassName(string  sql)
+        {
+            using (MySqlConnection conn = new MySqlConnection(connString))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandText = sql;
+                    int rows = cmd.ExecuteNonQuery();
+                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    return dt;
+                }
+            }
+        }
+
     }
 }

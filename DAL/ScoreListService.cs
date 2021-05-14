@@ -107,5 +107,14 @@ namespace DAL
             objReader.Close();
             return list;
         }
+
+       public DataTable GetScoreByClassName()
+        {
+            string sql = "SELECT Students.StudentId,StudentName,ClassName,CSharp,SQLServerDB FROM Students ";
+            sql += "INNER JOIN StudentClass ON Students.ClassId=StudentClass.ClassId ";
+            sql += "INNER JOIN ScoreList ON ScoreList.StudentId=Students.StudentId ";
+            
+            return SQLHelper.GetByClassName(sql);
+        }
     }
 }
