@@ -203,6 +203,41 @@ namespace DAL
             catch(Exception ex) { throw new Exception("删除学员失败！"+ex.Message); }
             
         }
-           
+
+
+        /// <summary>
+        /// 根据卡号查询学生信息
+        /// </summary>
+        /// <param name="StuID"></param>
+        /// <returns></returns>
+        public StudentExt GetStudentByCardNo(string CardNo)
+        {
+            string sql = "SELECT  StudentId, StudentName,Age,Gender,Birthday,CardNo,ClassName,StudentIdNo,PhoneNumber,StudentAddress,StuImage  FROM Students";
+            sql += " INNER JOIN StudentClass ON Students.ClassId=StudentClass.ClassId";
+            sql += " WHERE  Students.CardNo='" + CardNo+"'";
+
+            MySqlDataReader objReader = SQLHelper.GetReader(sql);
+            StudentExt studentExt = new StudentExt();
+            if (objReader.Read())
+            {
+                studentExt = new StudentExt
+                {
+                    StudentId = Convert.ToInt32(objReader["StudentId"]),
+                    StudentName = objReader["StudentName"].ToString(),
+                    Age = Convert.ToInt32(objReader["Age"]),
+                    Gender = objReader["Gender"].ToString(),
+                    Birthday = Convert.ToDateTime(objReader["Birthday"]),
+                    CardNo = objReader["CardNo"].ToString(),
+                    ClassName = objReader["ClassName"].ToString(),
+                    StudentIdNo = objReader["StudentIdNo"].ToString(),
+                    PhoneNumber = objReader["PhoneNumber"].ToString(),
+                    StudentAddress = objReader["StudentAddress"].ToString(),
+                    StuImage = objReader["StuImage"].ToString(),
+                };
+            }
+
+            return studentExt;
+        }
+
     }
 }

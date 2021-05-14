@@ -90,5 +90,14 @@ namespace DAL
                 throw ex;
             }
         }
+
+        /// <summary>
+        /// 获取当前系统时间
+        /// </summary>
+        /// <returns></returns>
+        public static DateTime GetServerTime()
+        {
+            return Convert.ToDateTime(GetSingleResult("SELECT NOW()"));
+        }
     }
 }

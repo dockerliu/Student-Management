@@ -159,7 +159,7 @@
             // 
             // lblDBAvg
             // 
-            this.lblDBAvg.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblDBAvg.BackColor = System.Drawing.Color.White;
             this.lblDBAvg.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblDBAvg.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblDBAvg.Location = new System.Drawing.Point(90, 175);
@@ -179,7 +179,7 @@
             // 
             // lblCount
             // 
-            this.lblCount.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblCount.BackColor = System.Drawing.Color.White;
             this.lblCount.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCount.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblCount.Location = new System.Drawing.Point(90, 82);
@@ -190,7 +190,7 @@
             // 
             // lblCSharpAvg
             // 
-            this.lblCSharpAvg.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblCSharpAvg.BackColor = System.Drawing.Color.White;
             this.lblCSharpAvg.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCSharpAvg.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblCSharpAvg.Location = new System.Drawing.Point(90, 127);
@@ -219,7 +219,7 @@
             // 
             // lblAttendCount
             // 
-            this.lblAttendCount.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblAttendCount.BackColor = System.Drawing.Color.White;
             this.lblAttendCount.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAttendCount.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblAttendCount.Location = new System.Drawing.Point(90, 33);
@@ -259,11 +259,11 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("方正准圆简体", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.ForeColor = System.Drawing.Color.Purple;
             this.label9.Location = new System.Drawing.Point(6, 19);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(201, 32);
+            this.label9.Size = new System.Drawing.Size(195, 33);
             this.label9.TabIndex = 16;
             this.label9.Text = "学员成绩管理";
             // 
