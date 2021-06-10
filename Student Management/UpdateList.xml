@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AutoUpdate>
+  <!-- 升级文件所在服务器端的网址-->
+  <URLAddress URL="htpp://" />
+
+  <UpdateInfo>
+    <!-- 升级文件的更新日期 -->
+    <UpdateTime Date="2017-01-22 12:00" />
+    <!--升级版本号-->
+    <Version Num="1.0.0.2"/>
+    
+  </UpdateInfo>
+  <UpdateFileList>
+    <!--升级文件列表-->
+    <UpdateFile Ver="1.0.0.2" FileName="DAL.dll"  ContentLength="21k"  />
+    <UpdateFile Ver="1.0.0.2" FileName="StudentManager.exe"  ContentLength="541k"  />
+    <UpdateFile Ver="1.0.0.2" FileName="weixin.rar"  ContentLength="6.77Mk"  />
+    
+  </UpdateFileList>
+  
+</AutoUpdate>

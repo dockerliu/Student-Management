@@ -204,12 +204,19 @@
       <Project>{dd5dc862-3d4e-493a-afba-239955f8d80e}</Project>
       <Name>Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\UpdatePro\UpdatePro.csproj">
+      <Project>{10c9a337-d9c6-42c4-95bf-90cce0cb954c}</Project>
+      <Name>UpdatePro</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="default.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="mainbg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UpdateList.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
