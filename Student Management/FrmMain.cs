@@ -171,8 +171,32 @@ namespace StudentManager
         }
 
 
+
         #endregion
 
-        
+        //升级入口
+        private void txmi_update_Click(object sender, EventArgs e)
+        {
+            UpdatePro.UpdateManager objUpdateManager =null;
+            try
+            {
+                objUpdateManager = new UpdatePro.UpdateManager();//因为需要联网下载最新文件，有可能出错
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("无法连接服务器，请检查网络设置！出错信息：" + ex.Message);
+                return;
+            }
+            if (!objUpdateManager.IsUpdate)
+            {
+                MessageBox.Show("当前版本已是最新,不需要升级！","更新提示：");
+                return;
+            }
+            if (MessageBox.Show("为了更新文件，将退出当前程序，请确保数据已保存！确认退出吗？","更新提示:",MessageBoxButtons.OKCancel,MessageBoxIcon.Question)==DialogResult.OK)
+            {
+                Application.Exit();
+                System.Diagnostics.Process.Start("UpdatePro.exe");
+            }
+        }
     }
 }

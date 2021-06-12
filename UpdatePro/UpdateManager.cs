@@ -34,7 +34,7 @@ namespace UpdatePro
             LastUpdateInfo = new UpdateInfo();
             NowUpdateInfo = new UpdateInfo();
             //2、给属性赋值
-            GetLastUpdateTime();
+            GetLastUpdateInfo();
             GetNewUpdateInfo();
 
         }
@@ -83,30 +83,32 @@ namespace UpdatePro
         /// <summary>
         /// 从本地获取上次更新的信息并封装到属性[服务器URL、版本、和更新时间]
         /// </summary>
-        private void GetLastUpdateTime()
+        private void GetLastUpdateInfo()
         {
-            FileStream myFile = new FileStream("UpdateList.xml", FileMode.Open);
-            XmlTextReader xmlReader = new XmlTextReader(myFile);
-            while (xmlReader.Read())
-            {
-                switch (xmlReader.Name)
+            //FileStream myFile = new FileStream("UpdateList.xml", FileMode.Open);
+            //XmlTextReader xmlReader = new XmlTextReader("UpdateList.xml");
+            XmlTextReader xmlReader = new XmlTextReader("UpdateList.xml");
+           while (xmlReader.Read())
                 {
-                    case "URLAdress":
-                        LastUpdateInfo.UpdateURL = xmlReader.GetAttribute("URL");
-                        break;
-                    case "Version":
-                        LastUpdateInfo.Version = xmlReader.GetAttribute("Num");
-                        break;
-                    case "UpdateTime":
-                        LastUpdateInfo.UpdateTime = Convert.ToDateTime(xmlReader.GetAttribute("Date"));
-                        break;
+                    switch (xmlReader.Name)
+                    {
+                        case "URLAddress":
+                            LastUpdateInfo.UpdateURL = xmlReader.GetAttribute("URL");
+                            break;
+                        case "Version":
+                            LastUpdateInfo.Version = xmlReader.GetAttribute("Num");
+                            break;
+                        case "UpdateTime":
+                            LastUpdateInfo.UpdateTime = Convert.ToDateTime(xmlReader.GetAttribute("Date"));
+                            break;
 
-                    default:
-                        break;
-                }
-            }
+                        default:
+                            break;
+                    }
+                } 
+            
             xmlReader.Close();
-            myFile.Close();
+            //myFile.Close();
         }
 
         /// <summary>
@@ -119,7 +121,7 @@ namespace UpdatePro
 
             //远程下载
             WebClient objClient = new WebClient();
-            objClient.DownloadFile(LastUpdateInfo + "UpdateList.xml", newXmlTempPath);//前面是下载路径+文件名，后面是保存路径 
+            objClient.DownloadFile(LastUpdateInfo.UpdateURL + "UpdateList.xml", newXmlTempPath);//前面是下载路径+文件名，后面是保存路径 
             //封装更新的信息
             FileStream myFile = new FileStream(newXmlTempPath, FileMode.Open);
             XmlTextReader xmlReader = new XmlTextReader(myFile);

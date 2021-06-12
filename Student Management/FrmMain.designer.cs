@@ -230,7 +230,7 @@
             // 
             this.tsmi_linkxkt.Image = ((System.Drawing.Image)(resources.GetObject("tsmi_linkxkt.Image")));
             this.tsmi_linkxkt.Name = "tsmi_linkxkt";
-            this.tsmi_linkxkt.Size = new System.Drawing.Size(142, 22);
+            this.tsmi_linkxkt.Size = new System.Drawing.Size(180, 22);
             this.tsmi_linkxkt.Text = "访问官网(&X)";
             this.tsmi_linkxkt.Click += new System.EventHandler(this.tsmi_linkxkt_Click);
             // 
@@ -238,19 +238,20 @@
             // 
             this.txmi_update.Image = ((System.Drawing.Image)(resources.GetObject("txmi_update.Image")));
             this.txmi_update.Name = "txmi_update";
-            this.txmi_update.Size = new System.Drawing.Size(142, 22);
+            this.txmi_update.Size = new System.Drawing.Size(180, 22);
             this.txmi_update.Text = "系统升级(&U)";
+            this.txmi_update.Click += new System.EventHandler(this.txmi_update_Click);
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(139, 6);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(177, 6);
             // 
             // tsmi_about
             // 
             this.tsmi_about.Image = ((System.Drawing.Image)(resources.GetObject("tsmi_about.Image")));
             this.tsmi_about.Name = "tsmi_about";
-            this.tsmi_about.Size = new System.Drawing.Size(142, 22);
+            this.tsmi_about.Size = new System.Drawing.Size(180, 22);
             this.tsmi_about.Text = "关于我们(&A)";
             this.tsmi_about.Click += new System.EventHandler(this.tsmi_about_Click);
             // 
