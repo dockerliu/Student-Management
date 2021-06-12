@@ -219,6 +219,7 @@ namespace UpdatePro
             this.btnFinish.TabIndex = 4;
             this.btnFinish.Text = "完成";
             this.btnFinish.UseVisualStyleBackColor = true;
+            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
             // 
             // btnNext
             // 
@@ -228,6 +229,7 @@ namespace UpdatePro
             this.btnNext.TabIndex = 4;
             this.btnNext.Text = "下一步";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnCancel
             // 

@@ -41,6 +41,6 @@ namespace UpdatePro
         /// <summary>
         /// 更新文件信息列表[和ListView的显示对应]
         /// </summary>
-        public string[] fileList { get; set; }
+        public List<string[]> fileList { get; set; }
     }
 }
