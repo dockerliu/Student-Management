@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <AutoUpdate>
   <!-- 升级文件所在服务器端的网址-->
-  <URLAddress URL="htpp://" />
+  <URLAddress URL="http://a9.com/Update/"  />
 
   <UpdateInfo>
     <!-- 升级文件的更新日期 -->

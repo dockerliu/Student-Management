@@ -174,7 +174,11 @@ namespace StudentManager
 
         #endregion
 
-        //升级入口
+        /// <summary>
+        /// 升级入口按钮
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txmi_update_Click(object sender, EventArgs e)
         {
             UpdatePro.UpdateManager objUpdateManager =null;
@@ -197,6 +201,30 @@ namespace StudentManager
                 Application.Exit();
                 System.Diagnostics.Process.Start("UpdatePro.exe");
             }
+        }
+        /// <summary>
+        /// 程序启动后，自动检测是否需要升级
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void timer_Update_Tick(object sender, EventArgs e)
+        {
+            UpdatePro.UpdateManager objUpdateManager = null;
+            try
+            {
+                objUpdateManager = new UpdatePro.UpdateManager();//因为需要联网下载最新文件，有可能出错
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("无法连接服务器，请检查网络设置！出错信息：" + ex.Message);
+                return;
+            }
+            if (objUpdateManager.IsUpdate)
+            {
+                UpdatePro.FrmTips frmTips = new UpdatePro.FrmTips();
+                frmTips.Show();
+            }
+            timer_Update.Enabled = false;//停止定时器，防止频繁弹窗
         }
     }
 }

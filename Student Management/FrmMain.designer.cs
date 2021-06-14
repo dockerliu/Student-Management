@@ -66,7 +66,7 @@
             this.tsbModifyPwd = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.tsbExit = new System.Windows.Forms.ToolStripButton();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer_Update = new System.Windows.Forms.Timer(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panelForm = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
@@ -373,6 +373,12 @@
             this.tsbExit.Text = "退出系统";
             this.tsbExit.Click += new System.EventHandler(this.tsbExit_Click);
             // 
+            // timer_Update
+            // 
+            this.timer_Update.Enabled = true;
+            this.timer_Update.Interval = 3000;
+            this.timer_Update.Tick += new System.EventHandler(this.timer_Update_Tick);
+            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
@@ -460,7 +466,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
         private System.Windows.Forms.ToolStripButton tsbExit;
         private System.Windows.Forms.ToolStripStatusLabel lblVersion;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer_Update;
         private System.Windows.Forms.ToolStripButton tsbQuery;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem tsmi_AttendanceQuery;

@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmTips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTips.designer.cs">
+      <DependentUpon>FrmTips.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UpdateInfo.cs" />
     <Compile Include="UpdateManager.cs" />
+    <EmbeddedResource Include="FrmTips.resx">
+      <DependentUpon>FrmTips.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmUpdate.resx">
       <DependentUpon>FrmUpdate.cs</DependentUpon>
     </EmbeddedResource>
