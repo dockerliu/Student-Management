@@ -16,6 +16,7 @@ namespace UpdatePro
         public FrmUpdate()
         {
             InitializeComponent();
+            Init();
         }
 
         //退出、取消
